@@ -166,13 +166,6 @@ plugins: {
 | version                | no       | Build version. E.g. `version: packageJson.version`                                                                                                                                                                                                                                                   |
 | resultProcessor        | no       | `function(testResult, { testCase, allResults, allTestCases })`.<br/>It is expected to return test result object (you could add/replace in this object any required fields to follow your Testrail configuration).<br/>If this function returns `null` then this result will not be sent to Testrail. |
 
-## Contribute
+## Contributing
 
-### Tests run
-
-```shell
-npm run test-server
-npm run acceptance_test
-```
-
-Mock server data is mutable and has to be cleaned up (reverted) before any running and BEFORE commit changes!
+[Read here](./.github/CONTRIBUTING.md)
