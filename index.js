@@ -354,9 +354,9 @@ module.exports = (config) => {
 
 							if (processedResult) {
 								if (testCase) {
-									acc.validResults.push(testResult);
+									acc.validResults.push(processedResult);
 								} else {
-									acc.missingLabels.push(testResult);
+									acc.missingLabels.push(processedResult);
 								}
 							}
 							return acc;
