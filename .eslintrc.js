@@ -1,16 +1,22 @@
 module.exports = {
-	'env': {
-		'browser': true,
-		'es6': true,
-		'node': true
+	env: {
+		browser: true,
+		es6: true,
+		node: true,
+		mocha: true
 	},
-	'extends': 'eslint:recommended',
-	'parserOptions': {
-		'sourceType': 'module',
-		'ecmaVersion': 2018
+	globals: {
+		Feature: true,
+		Before: true,
+		Scenario: true,
 	},
-	'rules': {
-		'indent': [
+	extends: 'eslint:recommended',
+	parserOptions: {
+		sourceType: 'module',
+		ecmaVersion: 2018
+	},
+	rules: {
+		indent: [
 			'error',
 			'tab'
 		],
@@ -18,11 +24,11 @@ module.exports = {
 			'error',
 			'unix'
 		],
-		'quotes': [
+		quotes: [
 			'error',
 			'single'
 		],
-		'semi': [
+		semi: [
 			'error',
 			'always'
 		],
